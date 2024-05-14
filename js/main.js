@@ -1,4 +1,71 @@
 // Uyga vazifa /////////////////////
+// Masalalar //
+
+// N1 //
+// function countVowels(inputString) {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   return [...inputString].filter((char) => vowels.includes(char)).length;
+// }
+// console.log(countVowels("abuiadgiue"));
+
+// N2 //
+// function reverseNumbers(n) {
+//   const result = [];
+//   for (let i = n; i > 0; i--) {
+//     result.push(i);
+//   }
+//   return result;
+// }
+// console.log(reverseNumbers(5));
+
+// N3 //
+// function sumOfSquares(arr) {
+//   return arr.reduce((sum, num) => sum + num ** 2, 0);
+// }
+// console.log(sumOfSquares([1, 2, 2]));
+
+// N4 //
+// function findNextSquare(n) {
+//   if (Math.sqrt(n) % 1 === 0) {
+//     var a = (Math.sqrt(n) + 1) ** 2;
+//     return a;
+//   } else {
+//     return -1;
+//   }
+// }
+// console.log(findNextSquare(121));
+// console.log(findNextSquare(625));
+// console.log(findNextSquare(114));
+
+// N5 //
+// function removeSpaces(str) {
+//   return str.split(" ").join("");
+// }
+// console.log(removeSpaces("8 j 8   mBliB8g  imj888b  jl  B"));
+// console.log(removeSpaces("8 8 Bi fk8h B 8 8888 B B  8888 c hl8 Bhb fd"));
+// console.log(removeSpaces("8aaaaa dddd r   "));
+
+// N6 //
+// function updateLight(current) {
+//   const next = { green: "yellow", yellow: "red", red: "green" };
+//   return next[current] || "green"; // defaults to green if unexpected input
+// }
+// console.log(updateLight("green"));
+// console.log(updateLight("yellow"));
+// console.log(updateLight("red"));
+
+// N7 //
+function reverseWords(sentence) {
+  return sentence
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+console.log(reverseWords("Hello world!"));
+console.log(reverseWords("a b c d"));
+console.log(reverseWords("double spaced words"));
+console.log(reverseWords("hello hello"));
+
 // high_order_functions //
 
 // N1 //
